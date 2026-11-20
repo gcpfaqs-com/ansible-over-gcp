@@ -17,7 +17,7 @@ resource "google_compute_firewall" "lab_access" {
 
   allow {
     protocol = "tcp"
-    ports    = ["22", "5985", "5986"]
+    ports    = ["22"]
   }
 
   source_ranges = ["0.0.0.0/0"]
